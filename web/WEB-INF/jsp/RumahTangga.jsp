@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Elektronik
-    Created on : Dec 15, 2017, 4:31:21 PM
+    Document   : RumahTangga
+    Created on : Dec 17, 2017, 6:21:52 PM
     Author     : user
 --%>
 
@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Elektronik</title>
+        <title>Peralatan Rumah Tangga</title>
+    </head>
     <body>
         <jsp:include page="head.jsp"/>
         <div class="container">
@@ -30,20 +31,20 @@
             <div id="products" class="row list-group">
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\alienware.jpg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\mejabelajar.jpg" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Laptop AlienWare</h4>
+                                Meja Belajar</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        Rp. 27.500.000</p>
+                                        Rp. 2.500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -51,20 +52,20 @@
                 </div>
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\samsungs8+.jpg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\lemari.png" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Samsung S8+</h4>
+                                Lemari Pakaian</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        Rp. 12.000.000</p>
+                                        Rp. 3.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -72,20 +73,20 @@
                 </div>
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\goprohero5.jpg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\vasbunga.jpg" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Go Pro Hero 5</h4>
+                                Vas Bunga</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        Rp. 4.600.000</p>
+                                        Rp. 500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -93,20 +94,20 @@
                 </div>
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\iphonex.jpeg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\kitchenset.jpg" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Iphone X</h4>
+                                Kitchen Set</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                       Rp. 13.000.000</p>
+                                       Rp. 8.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -114,20 +115,20 @@
                 </div>
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\powerbank.jpg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\sedotdebu.jpg" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Power Bank</h4>
+                                Penyedot Debu</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        Rp. 250.000</p>
+                                        Rp. 1.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -135,20 +136,20 @@
                 </div>
                 <div class="item  col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\samsungtv.jpg" alt="" />
+                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\alatmasak.jpg" alt="" />
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
-                                Samsung Smart TV</h4>
+                                Peralatan Masak</h4>
 <!--                            <p class="group inner list-group-item-text">
                                 Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        Rp. 4.500.000</p>
+                                        Rp. 1.500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
                                 </div>
                             </div>
                         </div>

@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author user
  */
 @Controller
-@RequestMapping("/elektronik")
-public class Elektronik {
+@RequestMapping("/fashion")
+public class Fashion {
 
     @RequestMapping()
-    public String goToElektronik(Model model) {
-        return "Elektronik";
+    public String goToFashion(Model model) {
+        return "Fashion";
     }
 }

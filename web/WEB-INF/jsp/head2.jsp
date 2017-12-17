@@ -1,6 +1,6 @@
 <%-- 
-    Document   : head
-    Created on : Dec 15, 2017, 3:53:47 PM
+    Document   : head2
+    Created on : Dec 17, 2017, 4:22:26 PM
     Author     : user
 --%>
 
@@ -10,10 +10,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
         <title>JSP Page</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
+         <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="${pageContext.request.contextPath}" style="width: 1000px; font-size: 40px; margin-left: 50px"><img src="E:\OnlineShop\logoolshop.jpg"></a>
@@ -25,11 +29,7 @@
                 <li><a href="${pageContext.request.contextPath}/rumahtangga">Peralatan Rumah Tangga</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-left: 100px;">
-            
-                <li><a href="${pageContext.request.contextPath}/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-                <c:if test="${empty sessionScope.user}">
-                <li><a href="${pageContext.request.contextPath}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </c:if>
+                <li><a href="${pageContext.request.contextPath}/logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
             </ul>
         </div>
     </nav>

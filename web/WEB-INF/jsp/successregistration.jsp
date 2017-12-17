@@ -10,15 +10,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Success Registration</title>
         <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
     </head>
     <body>
+        <jsp:include page="head.jsp"/>
         <div class="container">
             <h1>Registrasi berhasil</h1>
-            ${data.firstName} ${data.lastName}
             <p>
-                <a href="${pageContext.request.contextPath}/login">Please Login</a>
+                <a href="${pageContext.request.contextPath}/login">Lanjutkan Login</a>
             </p>
         </div>
 

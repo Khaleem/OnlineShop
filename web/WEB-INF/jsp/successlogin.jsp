@@ -10,14 +10,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Success Login</title>
     </head>
     <body>
+        <jsp:include page="head2.jsp"/>
         <div class="container">
-            <c:if test="${not empty sessionScope.user}">
-            <div><a href="${pageContext.request.contextPath}/logout">Logout</a></div>
-        </c:if>
-            <h1>${user.username}, Anda berhasil Login</h1></br>
+            <h1>Selamat datang, ${user.username}</h1></br>
                         <p><a href="${pageContext.request.contextPath}">Home</a></p>
         </div>
     </body>

@@ -21,9 +21,5 @@ public class index {
         model.addAttribute("msg", "Selamat datang di situs ini");
         return "index";
     }
-    
-    @RequestMapping("/elektronik")
-    public String goToElektronik(Model model){
-        return "Elektronik";
-    }
+
 }
