@@ -6,10 +6,12 @@
 package com.Model;
 
 import java.io.Serializable;
+import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 /**
@@ -17,51 +19,65 @@ import javax.persistence.Table;
  * @author user
  */
 @Entity
-@Table(name="PRODUCT_APP")
+@Table(name = "PRODUCT")
+@NamedQueries({
+    @NamedQuery(name = "Product.findAll", query = "SELECT p FROM Product p")
+    , @NamedQuery(name = "Product.findById", query = "SELECT p FROM Product p WHERE p.id = :id")
+    , @NamedQuery(name = "Product.findByGambar", query = "SELECT p FROM Product p WHERE p.gambar = :gambar")
+    , @NamedQuery(name = "Product.findByHarga", query = "SELECT p FROM Product p WHERE p.harga = :harga")
+    , @NamedQuery(name = "Product.findByNamaproduk", query = "SELECT p FROM Product p WHERE p.namaproduk = :namaproduk")})
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String namaProduk;
-    private double hargaProduk;
-    
+    @Basic(optional = false)
+    @Column(name = "ID")
+    private Integer id;
+    @Column(name = "GAMBAR")
+    private String gambar;
+    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
+    @Column(name = "HARGA")
+    private Double harga;
+    @Column(name = "NAMAPRODUK")
+    private String namaproduk;
 
-    public Long getId() {
-        return id;
+    public Product() {
     }
 
-    public void setId(Long id) {
+    public Product(Integer id) {
         this.id = id;
     }
 
-    /**
-     * @return the namaProduk
-     */
-    public String getNamaProduk() {
-        return namaProduk;
+    public Integer getId() {
+        return id;
     }
 
-    /**
-     * @param namaProduk the namaProduk to set
-     */
-    public void setNamaProduk(String namaProduk) {
-        this.namaProduk = namaProduk;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    /**
-     * @return the hargaProduk
-     */
-    public double getHargaProduk() {
-        return hargaProduk;
+    public String getGambar() {
+        return gambar;
     }
 
-    /**
-     * @param hargaProduk the hargaProduk to set
-     */
-    public void setHargaProduk(double hargaProduk) {
-        this.hargaProduk = hargaProduk;
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
+
+    public Double getHarga() {
+        return harga;
+    }
+
+    public void setHarga(Double harga) {
+        this.harga = harga;
+    }
+
+    public String getNamaproduk() {
+        return namaproduk;
+    }
+
+    public void setNamaproduk(String namaproduk) {
+        this.namaproduk = namaproduk;
     }
 
     @Override

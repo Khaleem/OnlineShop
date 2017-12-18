@@ -5,6 +5,8 @@
  */
 package com.DAO;
 
+import com.Model.Product;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
@@ -17,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 @Transactional
 public class ProductService {
+
     @PersistenceContext
     private EntityManager em;
 
@@ -40,6 +43,15 @@ public class ProductService {
     public void setEm(EntityManager em) {
         this.em = em;
     }
-    
-    
+
+    public List findAll() {
+        List products = em.createQuery("select e from Product e").getResultList();
+// products = this.em.createNamedQuery("TblProduct.findAll").getResultList();
+        return products;
+    }
+
+    public Product findById(Integer productId) {
+        return em.find(Product.class, productId);
+    }
+
 }

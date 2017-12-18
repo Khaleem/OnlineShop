@@ -20,16 +20,21 @@
             
         </div>
             <ul class="nav navbar-nav" style="margin-left: 250px">
-                <li><a href="${pageContext.request.contextPath}/elektronik">Elektronik</a></li>
-                <li><a href="${pageContext.request.contextPath}/fashion">Fashion</a></li>
+                <li><a href="${pageContext.request.contextPath}/elektronik/all">Elektronik</a></li>
+                <li><a href="${pageContext.request.contextPath}/fashion/all">Fashion</a></li>
                 <li><a href="${pageContext.request.contextPath}/rumahtangga">Peralatan Rumah Tangga</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-left: 100px;">
-            
-                <li><a href="${pageContext.request.contextPath}/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-                <c:if test="${empty sessionScope.user}">
-                <li><a href="${pageContext.request.contextPath}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </c:if>
+               <c:if test="${empty sessionScope.user}">
+                    <li><a href="${pageContext.request.contextPath}/login"><span class="glyphicon glyphicon-log-in"> Login</a></li>
+                    <li><a href="${pageContext.request.contextPath}/register"><span class="glyphicon glyphicon-registration-mark"> SignUp</a></li>
+                    </c:if>
+                    <c:if test="${not empty sessionScope.user}">
+                    <h1></h1>
+                     <li><a >Welcome, ${user.username}</a></li>
+                    <li><a href="${pageContext.request.contextPath}/logout"><span class="glyphicon glyphicon-log-out"> Logout</a></li>
+                    <li><a href="${pageContext.request.contextPath}/cart/show"><span class="glyphicon glyphicon-shopping-cart"> Cart : ${cart.carts.size()}</a></li>
+                    </c:if> 
             </ul>
         </div>
     </nav>

@@ -29,133 +29,134 @@
                 </div>
             </div>
             <div id="products" class="row list-group">
-                <div class="item  col-xs-4 col-lg-4">
+                <div class="item  col-xs-40 ">
                     <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\jaketbomber.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Jaket Bomber</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        Rp. 450.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="">Add to cart</a>
-                                </div>
-                            </div>
+                        <!--                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\jaketbomber.jpg" alt="" />-->
+                        <c:forEach var="d" items="${fashion}">
+                            <div class="caption" align="center">
+                                <image src="<c:url value="/resources/images/${d.gambar}"/>" width="140px" height="140px"/>
+                                <h4>Nama Produk : ${d.namaproduk}</h4>
+                                <h4>Harga : ${d.harga}</h4> 
+
+                                <c:if test="${empty sessionScope.user}">
+                                    <li><a href="${pageContext.request.contextPath}/login"><button >Add to cart</button></a></li>
+                                    </c:if>
+                                    <c:if test="${not empty sessionScope.user}">
+                                    <a href="${pageContext.request.contextPath}/cart/add/${e.id}" ><button class="btn btn-danger">Add to cart</button> </a>
+
+                                </c:if>                             
+                            </c:forEach>
                         </div>
-                    </div>
-                </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\celanajeans.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Celana Jeans</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        Rp. 500.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\jamtangan.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Jam Tangan</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        Rp. 2.000.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\snapback.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                SnapBack</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                       Rp. 400.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\sepatunmdr2.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Sepatu Adidas NMD R2</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        Rp. 2.500.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="E:\OnlineShop\resources\images\jersey.jpg" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Jersey AC Milan</h4>
-<!--                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        Rp. 650.000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
+            <!--            <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="E:\OnlineShop\resources\images\celanajeans.jpg" alt="" />
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Celana Jeans</h4>
+                                                                <p class="group inner list-group-item-text">
+                                                                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                Rp. 500.000</p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="E:\OnlineShop\resources\images\jamtangan.jpg" alt="" />
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Jam Tangan</h4>
+                                                                <p class="group inner list-group-item-text">
+                                                                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                Rp. 2.000.000</p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="E:\OnlineShop\resources\images\snapback.jpg" alt="" />
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        SnapBack</h4>
+                                                                <p class="group inner list-group-item-text">
+                                                                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                Rp. 400.000</p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="E:\OnlineShop\resources\images\sepatunmdr2.jpg" alt="" />
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Sepatu Adidas NMD R2</h4>
+                                                                <p class="group inner list-group-item-text">
+                                                                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                Rp. 2.500.000</p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="E:\OnlineShop\resources\images\jersey.jpg" alt="" />
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Jersey AC Milan</h4>
+                                                                <p class="group inner list-group-item-text">
+                                                                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                Rp. 650.000</p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
         </div>
     </body>
 </html>

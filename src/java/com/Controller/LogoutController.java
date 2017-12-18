@@ -17,8 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/logout")
 public class LogoutController {
-     @RequestMapping() 
-    public String logout(HttpSession session, Model model) {
+
+    @RequestMapping()
+    public String logout(HttpSession session,CartBean cb, Model model) {
+
+        if (session.getAttribute("cart") != null) {
+            cb = (CartBean) session.getAttribute("cart");
+            cb.getCarts().clear();
+        }
+        session.removeAttribute("cart");
         session.invalidate();
         return "index";
     }

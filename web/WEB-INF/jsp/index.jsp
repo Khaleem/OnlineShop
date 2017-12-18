@@ -38,7 +38,7 @@
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\jaketbomber2.jpg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/fashion/all"><img src="E:\OnlineShop\resources\images\jaketbomber2.jpg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">JAKET BOMBER</h4>
                                 <h5 class="text-center">Rp. 450.000</h5>
                             </div>
@@ -46,7 +46,7 @@
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\goprohero52.jpg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/elektronik/all"><img src="E:\OnlineShop\resources\images\goprohero52.jpg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">Go Pro Hero 5</h4>
                                 <h5 class="text-center">Rp. 4.600.000</h5>
                             </div>
@@ -54,15 +54,15 @@
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\powerbank2.jpg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/elektronik/all"><img src="E:\OnlineShop\resources\images\powerbank2.jpg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">PowerBank</h4>
-                                <h5 class="text-center">Rp. 4.600.000</h5>
+                                <h5 class="text-center">Rp. 250.000</h5>
                             </div>
                         </div>
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\sepatunmdr22.jpg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/fashion/all"><img src="E:\OnlineShop\resources\images\sepatunmdr22.jpg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">Sepatu Adidas NMD R2</h4>
                                 <h5 class="text-center">Rp. 2.500.000</h5>
                             </div>
@@ -70,7 +70,7 @@
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\vasbunga2.jpg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/rumahtangga"><img src="E:\OnlineShop\resources\images\vasbunga2.jpg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">Vas Bunga</h4>
                                 <h5 class="text-center">Rp. 500.000</h5>
                             </div>
@@ -78,7 +78,7 @@
 
                         <div class="item active">
                             <div class="col-xs-12 col-sm-6 col-md-2">
-                                <a href="#"><img src="E:\OnlineShop\resources\images\iphonex2.jpeg" class="img-responsive center-block"></a>
+                                <a href="${pageContext.request.contextPath}/elektronik/all"><img src="E:\OnlineShop\resources\images\iphonex2.jpeg" class="img-responsive center-block"></a>
                                 <h4 class="text-center">Iphone X</h4>
                                 <h5 class="text-center">Rp. 13.000.000</h5>
                             </div>

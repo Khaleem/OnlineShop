@@ -44,7 +44,7 @@
                                         Rp. 2.500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                         Rp. 3.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                         Rp. 500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                        Rp. 8.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                         Rp. 1.000.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                         Rp. 1.500.000</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
